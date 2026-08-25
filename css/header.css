@@ -1,5 +1,5 @@
 header{
-    border:1px solid red;
+    
 }
 .header-top{
 }
@@ -38,6 +38,7 @@ header{
     background-color: #fff;
     padding:1.75rem 0;
     display: none;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
 }
 .gnb>li:hover .gnb2depth{
     display: block;
