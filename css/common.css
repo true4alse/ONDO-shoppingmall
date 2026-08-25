@@ -56,17 +56,26 @@
     --gray-800:#494949;
     --gray-900:#1A1A1A;
 
+    /* 서브컬러 */
+    --sub-color:#7895B2;
 
 
 
 
 }
+
+h1{font-size: var(--fs-h1);}
+h2{font-size: var(--fs-h2);}
+h3{font-size: var(--fs-h3);}
+h4{font-size: var(--fs-h4);}
+
 
 html{
     font-size:var(--fs-pc);
     font-family: 'Pretendard',sans-serif;
+    font-weight: var(--fw1);
+    color:var(--gray-900);
 }
 .common-frame{
     padding:0 var(--space-2x-large);
-    
 }
