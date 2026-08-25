@@ -1,0 +1,26 @@
+header{
+    border:1px solid red;
+}
+.header-top{
+    border:1px solid red;
+}
+.header-top>.common-frame{
+    border:1px solid blue;
+    display: flex;
+    justify-content: space-between;
+}
+.user-menu{
+    display: flex;
+    gap:1rem;
+}
+.user-menu a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:1px solid blue;
+    gap:0.25rem;
+}
+.lnb{
+    display: flex;
+    align-items: center;
+}
