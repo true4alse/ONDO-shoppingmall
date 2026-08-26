@@ -111,6 +111,52 @@ header{
         height:100%;
         background-color: #fff;
         border:1px solid red;
+        display: flex;
+        flex-direction: column;
+    }
+    .smart-overlay-menu-1 .common-frame{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        border-bottom: 1px solid var(--cream-500);
+    }
+    .btn-menu-close{
+        position: absolute;
+        right:2rem;
+        top:50%;
+        transform: translateY(-50%);
+        line-height: 0;
+    }
+    .smart-overlay-menu-2 .common-frame{
+        height:4.285rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .smart-overlay-menu-top{
+        background-color: var(--cream-0);
+    }
+    .gnb-smart{
+        display: flex;
+        height:4.285rem;
+        gap:1rem;
+    }
+    .gnb-smart a{
+        height:100%;
+        display: flex;
+        align-items: center;
+        font-weight: var(--fw2);
+    }
+    .gnb-smart>li.on{
+        color:var(--cream-400);
+        border-bottom: 2px solid var(--cream-400);
+    }
+    .smart-overlay-menu-bottom{
+        flex-grow: 1;
+        overflow-y: auto;
     }
 
+    .gnb2depth-smart{
+        border:1px solid red;
+    }
 }
