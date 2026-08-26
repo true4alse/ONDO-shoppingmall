@@ -79,3 +79,21 @@ html{
 .common-frame{
     padding:0 var(--space-2x-large);
 }
+
+@media (max-width:1024px){
+    html{
+        font-size:var(--fs-pad);
+    }
+    .common-frame{
+        padding:0 var(--space-x-large);
+    }
+}
+
+@media (max-width:768px){
+    html{
+        font-size: var(--fs-mo);
+    }
+    .common-frame{
+        padding:0 var(--space-normal);
+    }
+}
