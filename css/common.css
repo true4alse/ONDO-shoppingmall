@@ -76,6 +76,9 @@ html{
     font-weight: var(--fw1);
     color:var(--gray-900);
 }
+main{
+    margin-top: 154px;
+}
 .common-frame{
     padding:0 var(--space-2x-large);
 }
@@ -84,6 +87,9 @@ html{
 .mo{display: none;}
 
 @media (max-width:1024px){
+    main{
+        margin-top: 5rem;
+    }
     .pc{display: none;}
     .pad{display: block;}
     .mo{display: none;}

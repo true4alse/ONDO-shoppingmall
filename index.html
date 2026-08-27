@@ -771,50 +771,52 @@
         </div>
     </div>
 
-    <!-- 히어로 배너 슬라이드 -->
-    <div class="swiper hero-slider">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img class='pc' src="./img/1.jpg" alt="당신의 공간은 ONDO에서 시작됩니다.">
-                <img class='pad' src="./img/pd11.jpg" alt="당신의 공간은 ONDO에서 시작됩니다.">
-                <img class='mo' src="./img/m11.jpg" alt="당신의 공간은 ONDO에서 시작됩니다.">
+    <main>
+        <!-- 히어로 배너 슬라이드 -->
+        <div class="swiper hero-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class='pc' src="./img/1.jpg" alt="당신의 공간은 ONDO에서 시작됩니다.">
+                    <img class='pad' src="./img/pd11.jpg" alt="당신의 공간은 ONDO에서 시작됩니다.">
+                    <img class='mo' src="./img/m11.jpg" alt="당신의 공간은 ONDO에서 시작됩니다.">
+                </div>
+                <div class="swiper-slide">
+                    <img class='pc' src="./img/2.jpg" alt="가장 사랑받는 베스트 가구를 30% 세일 할인가로 만나보세요">
+                    <img class='pad' src="./img/pd21.jpg" alt="가장 사랑받는 베스트 가구를 30% 세일 할인가로 만나보세요">
+                    <img class='mo' src="./img/m21.jpg" alt="가장 사랑받는 베스트 가구를 30% 세일 할인가로 만나보세요">
+                </div>
+                <div class="swiper-slide">
+                    <img class='pc' src="./img/3.jpg" alt="2026년 새로운 컬렉션의 가구가 출시되었습니다">
+                    <img class='pad' src="./img/pd31.jpg" alt="2026년 새로운 컬렉션의 가구가 출시되었습니다">
+                    <img class='mo'  src="./img/m31.jpg" alt="2026년 새로운 컬렉션의 가구가 출시되었습니다">
+                </div>
             </div>
-            <div class="swiper-slide">
-                <img class='pc' src="./img/2.jpg" alt="가장 사랑받는 베스트 가구를 30% 세일 할인가로 만나보세요">
-                <img class='pad' src="./img/pd21.jpg" alt="가장 사랑받는 베스트 가구를 30% 세일 할인가로 만나보세요">
-                <img class='mo' src="./img/m21.jpg" alt="가장 사랑받는 베스트 가구를 30% 세일 할인가로 만나보세요">
-            </div>
-            <div class="swiper-slide">
-                <img class='pc' src="./img/3.jpg" alt="2026년 새로운 컬렉션의 가구가 출시되었습니다">
-                <img class='pad' src="./img/pd31.jpg" alt="2026년 새로운 컬렉션의 가구가 출시되었습니다">
-                <img class='mo'  src="./img/m31.jpg" alt="2026년 새로운 컬렉션의 가구가 출시되었습니다">
+            <div class="swiper-pagination"></div>
+        </div>
+        <script>
+            const station = new Swiper('.hero-slider', {
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable:true,
+                },
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+                speed:1000
+            });
+        </script>
+        <div class="banner-line">
+            <div class="common-frame">
+                <span>NOTICE</span>
+                <h4>ONDO의 새로운 소식을 확인해보세요.</h4>
+                <p>새로운 Collection과 Event, 브랜드 관련 소식 만나보기</p>
+                <a href="#" class="btn-style">VIEW NOTICE <img src="./img/formkit_arrowright.svg" alt="공지사항 바로가기"></a>
             </div>
         </div>
-        <div class="swiper-pagination"></div>
-    </div>
-    <script>
-        const station = new Swiper('.hero-slider', {
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable:true,
-            },
-            autoplay: {
-                delay: 4000,
-                disableOnInteraction: false,
-            },
-            speed:1000
-        });
-    </script>
-    <div class="banner-line">
-        <div class="common-frame">
-            <span>NOTICE</span>
-            <h4>ONDO의 새로운 소식을 확인해보세요.</h4>
-            <p>새로운 Collection과 Event, 브랜드 관련 소식 만나보기</p>
-            <a href="#">VIEW NOTICE <img src="./img/formkit_arrowright.svg" alt="공지사항 바로가기"></a>
-        </div>
-    </div>
-
+    </main>
+    
 </body>
 
 </html>
