@@ -79,8 +79,14 @@ html{
 .common-frame{
     padding:0 var(--space-2x-large);
 }
+.pc{display: block;}
+.pad{display: none;}
+.mo{display: none;}
 
 @media (max-width:1024px){
+    .pc{display: none;}
+    .pad{display: block;}
+    .mo{display: none;}
     html{
         font-size:var(--fs-pad);
     }
@@ -90,6 +96,9 @@ html{
 }
 
 @media (max-width:768px){
+    .pc{display: none;}
+    .pad{display: none;}
+    .mo{display: block;}
     html{
         font-size: var(--fs-mo);
     }

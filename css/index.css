@@ -1,0 +1,17 @@
+.hero-slider{
+    width:100%;
+}
+.hero-slider .swiper-pagination-bullet-active {
+    background: var(--cream-500);
+    opacity: var(--swiper-pagination-bullet-opacity,1);
+}
+
+.hero-slider .swiper-horizontal>.swiper-pagination-bullets,
+.hero-slider .swiper-pagination-bullets.swiper-pagination-horizontal,
+.hero-slider .swiper-pagination-custom,
+.hero-slider .swiper-pagination-fraction {
+    bottom: 2rem;
+    left: 0;
+    top: var(--swiper-pagination-top,auto);
+    width: 100%;
+}
