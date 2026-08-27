@@ -10,9 +10,12 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/header.css">
     <script src="./js/header.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </head>
 
 <body>
+    <!-- 데스크탑용 헤더 -->
     <header class="pc">
         <div class="header-top">
             <div class="common-frame">
@@ -397,7 +400,7 @@
             </div>
         </div>
     </div>
-
+    <!-- 패드 /모바일용 전체 메가 메뉴 -->
     <div class="smart-overlay-menu">
         <div class="smart-overlay-menu-1">
             <div class="common-frame">
@@ -454,7 +457,7 @@
             <div class="common-frame">
                 <ul class="gnb-smart">
                     <li><a href="#">HOME</a></li>
-                    <li><a href="#">NEW</a></li>
+                    <li class="on"><a href="#">NEW</a></li>
                     <li><a href="#">SHOP</a></li>
                     <li><a href="#">COLLECTION</a></li>
                     <li><a href="#">EVENT</a></li>
@@ -464,7 +467,7 @@
             </div>
         </div>
         <div class="smart-overlay-menu-bottom">
-            <div class="gnb2depth-smart">
+            <div class="gnb2depth-smart on">
                 <div class="common-frame">
                     <section>
                         <h4><a href="#">신상품 전체</a></h4>
@@ -765,6 +768,16 @@
             </div>
 
         </div>
+    </div>
+
+    <!-- 히어로 배너 슬라이드 -->
+    <div class="swiper hero-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/1.jpg" alt="당신의 공간은 ONDO에서 시작됩니다."></div>
+            <div class="swiper-slide"><img src="./img/2.jpg" alt="가장 사랑받는 베스트 가구를 30% 세일 할인가로 만나보세요"></div>
+            <div class="swiper-slide"><img src="./img/3.jpg" alt="2026년 새로운 컬렉션의 가구가 출시되었습니다"></div>
+        </div>
+        <div class="swiper-pagination"></div>
     </div>
 </body>
 
