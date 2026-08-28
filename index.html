@@ -815,6 +815,8 @@
                 <a href="#" class="btn-style">VIEW NOTICE <img src="./img/formkit_arrowright.svg" alt="공지사항 바로가기"></a>
             </div>
         </div>
+
+
         <section class="con1">
             <div class="common-frame">
                 <div class="title">
@@ -822,32 +824,55 @@
                     <span></span>
                     <p>공간마다 다른 취향, 일상에 어울리는 가구와 오브제를 만나보세요.</p>
                 </div>
-                <ul class="cardlist">
-                    <li>
-                        <a href="#">
-                            <div class="cover">LIVING ROOM</div>
-                            <img src="./img/con1-1.jpg" alt="living room">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="cover">DINING ROOM</div>
-                            <img src="./img/con1-2.jpg" alt="DINING room">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="cover">KITCHEN</div>
-                            <img src="./img/con1-3.jpg" alt="KITCHEN">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="cover">BED ROOM</div>
-                            <img src="./img/con1-4.jpg" alt="BED room">
-                        </a>
-                    </li>
-                </ul>
+                <div class="swiper cardlist-wrap">
+                    <ul class="cardlist swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="cover">LIVING ROOM</div>
+                                <img src="./img/con1-1.jpg" alt="living room">
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="cover">DINING ROOM</div>
+                                <img src="./img/con1-2.jpg" alt="DINING room">
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="cover">KITCHEN</div>
+                                <img src="./img/con1-3.jpg" alt="KITCHEN">
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="cover">BED ROOM</div>
+                                <img src="./img/con1-4.jpg" alt="BED room">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <script>
+                    const cardlist = new Swiper('.cardlist-wrap', {
+                        breakpoints: {
+                            0: {
+                                slidesPerView: 2.2,
+                                spaceBetween: 12,
+                            },
+                            768: {
+                                slidesPerView: 3.2,
+                                spaceBetween: 14,
+                            },
+                            1024: {
+                                slidesPerView: 4,
+                                spaceBetween: 16,
+                            }
+                        },
+                        autoplay:{
+                            delay:3000
+                        }
+                    });
+                </script>
             </div>
         </section>
     </main>
