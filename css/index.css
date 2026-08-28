@@ -59,6 +59,24 @@
     height:0.875rem;
 }
 
+.con1{
+    padding:var(--space-3x-large);
+}
+.title{
+    border:1px solid red;
+    text-align: center;
+    color:var(--gray-800);
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+.title h1{
+    font-weight: var(--fw2);
+
+}
+
+
+
 @media (max-width:1250px){
     .banner-line .common-frame{
         justify-content: space-between;
