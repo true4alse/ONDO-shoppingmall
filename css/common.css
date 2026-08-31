@@ -88,6 +88,19 @@ main{
 .pad{display: none;}
 .mo{display: none;}
 
+.title-1{
+    font-weight: var(--fw2);
+}
+.desc-1{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color:var(--gray-700);
+}
+
+
 @media (max-width:1024px){
     main{
         margin-top: 5rem;
