@@ -49,7 +49,7 @@ let productArray = [
         pdesc: `절제된 디자인과 따뜻한 원목 소재로 완성한 벤치
 다이닝부터 현관까지 자연스럽게 어울립니다.`,
         price:540000,
-        pdiscount:0.28,
+        pdiscount:0.29,
         priceDiscount:388000,
         plikes:120,
         pthumbFileName:'ss5.jpg'
