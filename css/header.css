@@ -90,13 +90,15 @@ header{
 
 @media (max-width:1024px){
     .pc{display: none;}
-    .smart-header{
+    .smart-header {
         display: block;
-        height:5rem;
+        height: 5rem;
         position: fixed;
-        width:100%;
-        left:0;
-        top:0;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 1000;
+        background: #fff;
     }
     .logo img{height:5rem;}
     .smart-header .common-frame{
@@ -124,7 +126,7 @@ header{
         flex-direction: column;
         transform: translateX(100%);
         transition:all 0.6s ease 0s;
-        z-index: 110;
+        z-index: 1100;
     }
     .smart-overlay-menu.on{
         transform: translateX(0%);
@@ -201,4 +203,6 @@ header{
     .gnb2depth-smart .common-frame{
         grid-template-columns: repeat(2,1fr);
     }
+
+    
 }

@@ -237,6 +237,9 @@
     .banner-line .common-frame p{
         display: none;
     }
+    .sale {
+        grid-template-columns: repeat(2,minmax(50px,1fr));
+    }
 }
 @media (max-width:340px){
     .banner-line .common-frame{
