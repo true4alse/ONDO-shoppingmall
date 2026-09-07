@@ -1,0 +1,7 @@
+.info-product .common-frame{
+    display: flex;
+    gap:1rem;
+}
+.product-img{
+border:1px solid red;
+}
