@@ -62,23 +62,7 @@
 .con1{
     padding:var(--space-3x-large) 0;
 }
-.title{
-    text-align: center;
-    color:var(--gray-800);
-    display: flex;
-    flex-direction: column;
-    gap:2rem;
-    align-items: center;
-    margin-bottom: 3rem;
-}
-.title h1{
-    font-weight: var(--fw2);
-}
-.title span{
-    width:1rem;
-    height:0.125rem;
-    background-color: var(--gray-800);
-}
+
 .cardlist-wrap{
     width:100%;
 }
@@ -166,52 +150,13 @@
     margin-bottom: .5rem;
     color:var(--gray-700);
 }
-.pay-original{
-    color:var(--gray-500);
-    font-size: var(--fs-body2);
-}
-.pay-original span{
-    text-decoration: line-through;
-}
-.pay-discount{
-    display: flex;
-    align-items: center;
-    gap:0.5rem;
-}
-.discount{
-    font-size: var(--fs-body2);
-}
-.pay{
-    color:var(--red);
-}
 
-.sale{
-    display: grid;
-    grid-template-columns: repeat(4,minmax(50px,1fr));
-    gap:3rem 1rem;
-}
+
+
 .con3{
     padding:6rem 0;
 }
-.sale li figure{
-    line-height: 0;
-    margin-bottom: 1.75rem;
-}
-.sale li figure img{
-    width:100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    border-radius: 0.5rem;
-}
 
-.like-badge.noab{
-    position: initial;
-}
-.sale-txt{
-    display: flex;
-    flex-direction: column;
-    gap:.5rem;
-}
 
 
 @media (max-width:1250px){
@@ -237,9 +182,7 @@
     .banner-line .common-frame p{
         display: none;
     }
-    .sale {
-        grid-template-columns: repeat(2,minmax(50px,1fr));
-    }
+    
 }
 @media (max-width:340px){
     .banner-line .common-frame{

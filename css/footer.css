@@ -1,82 +1,130 @@
-footer{
+footer {
     background-color: #000;
-    color:#fff;
+    color: #fff;
     padding-top: 3rem;
     padding-bottom: 4rem;
 }
-footer .common-frame{
+
+footer .common-frame {
     display: flex;
     flex-direction: column;
-    gap:2rem;
+    gap: 2rem;
 }
-.foot-navi{
+
+.foot-navi {
     display: flex;
     justify-content: space-between;
 }
-.footmenu{
+
+.footmenu {
     display: flex;
-    gap:2rem;
+    gap: 2rem;
     font-size: var(--fs-h4);
     font-weight: var(--fw2);
     margin-bottom: 2rem;
 }
-.stli{
-    color:var(--cream-500);
+
+.stli {
+    color: var(--cream-500);
 }
-.sns{
+
+.sns {
     display: flex;
-    gap:1rem;
+    gap: 1rem;
     justify-content: flex-end;
 }
-.coinfo{
-    width:1024px;
+
+.coinfo {
+    width: 1024px;
     display: grid;
-    grid-template-columns: repeat(4,minmax(50px,1fr));
-    gap:1rem 1rem;
+    grid-template-columns: repeat(4, minmax(50px, 1fr));
+    gap: 1rem 1rem;
 }
-.coinfo dd{
+
+.coinfo dd {
     font-weight: var(--fw2);
 }
-.foot2{
-    width:450px;
+
+.foot2 {
+    width: 450px;
 }
-.logof img{
-    height:6.25rem;
+
+.logof img {
+    height: 6.25rem;
 }
-.slogan{
+
+.slogan {
     font-size: var(--fs-h3);
     font-weight: var(--fw2);
     margin-bottom: 1rem;
 }
-.brand-desc{
+
+.brand-desc {
     line-height: var(--lh2);
 }
-.cscenter{
+
+.cscenter {
     display: flex;
     justify-content: center;
 }
-.cscon h2{
+
+.cscon h2 {
     font-weight: var(--fw2);
     margin-bottom: 1rem;
     text-align: center;
 }
-.cstime{
-    width:390px;
+
+.cstime {
     display: grid;
-    grid-template-columns: repeat(2,minmax(50px,1fr));
-    gap:1rem 1rem;
+    grid-template-columns: repeat(2, minmax(50px, 1fr));
+    gap: 1rem 1rem;
 }
-.cstime dd{
+
+.cstime dd {
     font-weight: var(--fw2);
 }
-.copy{
+
+.copy {
     text-align: center;
 }
 
-@media (max-width:1400px){
-    .foot-navi{
+@media (max-width:1400px) {
+    .foot-navi {
         flex-direction: column;
         justify-content: initial;
-        gap:28px;
+        gap: 2rem;
+    }
+
+    .coinfo {
+        width: auto;
+    }
+
+    .foot2 {
+        width: auto;
+    }
+
+    .sns {
+        justify-content: center;
+    }
+
+    .logof {
+        text-align: center;
+    }
+
+}
+
+@media (max-width:768px) {
+    .footmenu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem 1rem;
+    }
+
+    .coinfo {
+        grid-template-columns: repeat(2, minmax(50px, 1fr));
+    }
+
+    .cscenter {
+        justify-content: flex-start;
     }
 }

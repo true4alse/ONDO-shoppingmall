@@ -203,6 +203,12 @@ header{
     .gnb2depth-smart .common-frame{
         grid-template-columns: repeat(2,1fr);
     }
-
+    .smart-overlay-menu-top .common-frame{
+        overflow-x: auto;
+    }
+    .gnb-smart{
+        padding-right: 1rem;
+        display: inline-flex;
+    }
     
 }
