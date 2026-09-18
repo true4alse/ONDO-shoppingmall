@@ -191,7 +191,54 @@
     background-color: var(--cream-500);
 }
 
+.product-detail-info{
+}
+.product-detail-info>div>div{
+    padding-top: 6rem;
+}
+.sticky-product-menu{
+    display: flex;
+    gap:1rem;
+    justify-content: center;
+}
+.sticky-product-menu a{
+    width:300px;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid var(--gray-500);
+    font-size: var(--fs-h4);
+    color:var(--gray-500);
+}
+.sticky-product-menu a.on{
+    border:1px solid var(--gray-900);
+    color:var(--gray-900);
+}
+#product-detail-1{
+    text-align: center;
+}
+
+#product-detail-2 h2{
+    text-align: center;
+    font-weight: var(--fw2);
+}
+
+.review{
+    border:1px solid red;
+    
+}
+
 @media (max-width:1024px) {
+
+    .sticky-product-menu>li{
+        flex:1;
+    }
+    .sticky-product-menu a{
+        width:initial;
+        height:3.428rem;
+    }
+
     .benefit {
         grid-template-columns: 90px 1fr 110px;
     }
