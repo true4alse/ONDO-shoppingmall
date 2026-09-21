@@ -191,86 +191,185 @@
     background-color: var(--cream-500);
 }
 
-.product-detail-info{
-}
-.product-detail-info>div>div{
+.product-detail-info {}
+
+.product-detail-info>div>div {
     padding-top: 6rem;
 }
-.sticky-product-menu{
+
+.sticky-product-menu {
     display: flex;
-    gap:1rem;
+    gap: 1rem;
     justify-content: center;
 }
-.sticky-product-menu a{
-    width:300px;
-    height:50px;
+
+.sticky-product-menu a {
+    width: 300px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border:1px solid var(--gray-500);
+    border: 1px solid var(--gray-500);
     font-size: var(--fs-h4);
-    color:var(--gray-500);
+    color: var(--gray-500);
 }
-.sticky-product-menu a.on{
-    border:1px solid var(--gray-900);
-    color:var(--gray-900);
+
+.sticky-product-menu a.on {
+    border: 1px solid var(--gray-900);
+    color: var(--gray-900);
 }
-#product-detail-1{
+
+#product-detail-1 {
     text-align: center;
 }
 
-#product-detail-2 h2{
+#product-detail-2 h2 {
     text-align: center;
     font-weight: var(--fw2);
+    margin-bottom: 3rem;
 }
 
-.review{
-    border:1px solid red;
+.review {
     display: flex;
     flex-direction: column;
     gap: 6rem;
 }
-.review>li{
-    border:1px solid blue;
+
+.review>li {
     display: flex;
-    gap:1rem;
+    gap: 1rem;
 }
-.review-user{
-    width:291px;
-    border:1px solid green;
+
+.review-user {
+    width: 291px;
     flex-shrink: 0;
     background-color: var(--gray-300);
     display: flex;
     justify-content: space-between;
-    padding:2rem;
+    padding: 2rem;
     box-sizing: border-box;
-    font-size:13px;
-}
-.rev-name{
-    font-weight: 600;
-    color:var(--gray-900);
-}
-.rev-date{
-    font-weight: 400;
-    color:var(--gray-700);
+    font-size: 13px;
 }
 
-.review-content{
+.rev-name {
+    font-weight: 600;
+    color: var(--gray-900);
+}
+
+.rev-date {
+    font-weight: 400;
+    color: var(--gray-700);
+}
+
+.review-content {
     flex-grow: 1;
-    border:1px solid green;
     display: flex;
     flex-direction: column;
-    gap:1rem;
+    gap: 1rem;
+}
+
+.stars {
+    display: flex;
+    gap: .25rem;
+}
+
+.stars img {
+    height: 1.5rem;
+}
+
+.review-txt {
+    text-align: right;
+}
+
+.review-txt p {
+    text-align: left;
+
+}
+
+.review-txt.fold p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.review-txt .btn-rvtxt img{
+    transform: rotate(180deg);
+}
+.review-txt.fold .btn-rvtxt img{
+    transform: rotate(0deg);
+    transition:all .5s ease 0s;
+}
+
+
+
+.btn-rvtxt {
+    font-weight: var(--fw2);
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: .25rem;
+    padding: 0.5rem 2rem;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.btn-rvtxt img {
+    height: 1rem;
+}
+
+.review-img {
+    overflow-x: auto;
+}
+
+.review-gallery {
+    display: flex;
+    gap: 1rem;
+}
+
+.review-gallery li {
+    line-height: 0;
+    border-radius: .5rem;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.review-gallery li img {
+    width: 200px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.review-etc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review-etc a {
+    display: flex;
+    align-items: center;
+    color: var(--gray-600);
+    gap: .25rem;
+
 }
 
 @media (max-width:1024px) {
-
-    .sticky-product-menu>li{
-        flex:1;
+    .review-gallery li img {
+        width: 180px;
     }
-    .sticky-product-menu a{
-        width:initial;
-        height:3.428rem;
+
+    .review-user {
+        width: 233px;
+    }
+
+
+    .sticky-product-menu>li {
+        flex: 1;
+    }
+
+    .sticky-product-menu a {
+        width: initial;
+        height: 3.428rem;
     }
 
     .benefit {
@@ -299,10 +398,26 @@
         padding-left: 0;
     }
 }
-@media (max-width:768px) {}
+
+@media (max-width:768px) {
+    .review>li {
+        flex-direction: column;
+    }
+
+    .review-user {
+        width: initial;
+    }
+
+    .review-gallery li img {
+        width: 140px;
+    }
+}
 
 @media (max-width:500px) {
     .benefit {
         grid-template-columns: initial;
+    }
+    .review-gallery li img {
+        width: 100px;
     }
 }
