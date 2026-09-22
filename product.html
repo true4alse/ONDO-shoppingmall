@@ -44,6 +44,13 @@
 </head>
 
 <body>
+    <script>
+        const productInfo = newProductArray.find(function(item){
+            return item.pid === Number(getParameter('pid'))
+        })
+        console.log(productInfo)
+    </script>
+
     <!-- 데스크탑용 헤더 -->
     <header class="pc">
         <div class="header-top">
@@ -805,6 +812,9 @@
                     <figure class="thumbnail-big">
                         <img src="./img/new1-big.jpg" alt="루아 원목 다이닝 테이블">
                     </figure>
+                    <script>
+                        document.querySelector('.thumbnail-big').innerHTML = `<img src="./img/${productInfo.pthumbFileName}" alt="${productInfo.pname}">`
+                    </script>
                     <div class="horizontal-scroll-gallery">
                         <div class="train-horizontal">
                             <figure><img src="./img/new1.jpg" alt="루아 원목 다이닝 테이블 1번 사진"></figure>
@@ -829,7 +839,6 @@
                             <div class="pay"><b>70,000</b>원</div>
                         </div>
                     </div>
-
                     <div class="benefits">
                         <dl class="benefit str">
                             <dt>회원혜택</dt>
@@ -904,7 +913,6 @@
                             </dd>
                         </dl>
                     </div>
-
                     <div class="pay-info">
                         총 합계금액 <b>977,500</b>원
                         <p class="tip-info">※ 회원 혜택가는 로그인 후, 주문서 작성시 적용 가능합니다.</p>
@@ -914,6 +922,9 @@
                         <a href="#" class="btn-buy">구매하기</a>
                     </div>
                 </div>
+                <script>
+                    document.querySelector('.product-txt').innerHTML = ``
+                </script>
             </div>
         </section>
 
