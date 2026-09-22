@@ -3,7 +3,7 @@
 const saleUlTag = document.querySelector('.new-product');
 let result = newProductArray.map(product => {
     return `<li>
-                <a href="#">
+                <a href="./product.html?pid=${product.pid}">
                     <figure>
                         <img src="./img/${product.pthumbFileName}" alt="${product.pname}">
                     </figure>
