@@ -41,6 +41,7 @@
     <script src="./js/new-product.js"></script>
     <script src="./js/product-ui.js" defer></script>
     <script src="./js/parameter.js"></script>
+    <script src="./js/won.js"></script>
 </head>
 
 <body>
@@ -928,13 +929,17 @@
                         <div class="product-title">${productInfo.pname}</div>
                     </div>
                     <div class="pay-frame product-pay">
-                        <div class="pay-original">
-                            <span>${productInfo.price}</span>원
+                        ${productInfo.pdiscount?`<div class="pay-original">
+                            <span>${won(productInfo.price)}</span>원
                         </div>
                         <div class="pay-discount">
-                            <div class="discount">30%</div>
-                            <div class="pay"><b>70,000</b>원</div>
-                        </div>
+                            <div class="discount">${productInfo.pdiscount*100}%</div>
+                            <div class="pay"><b>${won(productInfo.price*(1-productInfo.pdiscount))}</b>원</div>
+                        </div>`:`
+                        <div class="pay-discount">
+                            <div class="pay"><b>${won(productInfo.price*(1-productInfo.pdiscount))}</b>원</div>
+                        </div>`}
+                        
                     </div>
                     <div class="benefits">
                         <dl class="benefit str">
@@ -1011,7 +1016,7 @@
                         </dl>
                     </div>
                     <div class="pay-info">
-                        총 합계금액 <b>977,500</b>원
+                        총 합계금액 <b>${won(productInfo.price*(1-productInfo.pdiscount))}</b>원
                         <p class="tip-info">※ 회원 혜택가는 로그인 후, 주문서 작성시 적용 가능합니다.</p>
                     </div>
                     <div class="buttons">

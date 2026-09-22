@@ -1,3 +1,4 @@
 function won(price) {
-  return price.toLocaleString('ko-KR') + '원';
+  let result = Math.round(price);
+  return result.toLocaleString('ko-KR');
 }
