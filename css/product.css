@@ -408,6 +408,19 @@
     color: var(--gray-700);
 }
 
+/* 리뷰 */
+.no-review{
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    background: var(--cream-0);
+    color: var(--gray-600);
+    border-radius: 1rem;
+    font-size: var(--fs-body1);
+    font-weight: var(--fw1);
+}
+
 
 @media (max-width:1400px) {
     .product-table {
