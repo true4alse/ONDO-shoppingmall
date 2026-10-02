@@ -4,8 +4,12 @@ header{
     top:0;
     z-index: 100;
     width:100%;
-
+    transition:all 1s ease 0s;
 }
+header.on{
+    transform:translateY(-104px);
+}
+
 .smart-overlay-menu{display: none;}
 .header-top{
     background-color: #fff;
