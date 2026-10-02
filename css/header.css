@@ -1,10 +1,10 @@
-header{
+header {
     position: fixed;
-    left:0;
-    top:0;
-    z-index: 100;
-    width:100%;
-    transition:all 1s ease 0s;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    transition: all 1s ease 0s;
 }
 header.on{
     transform:translateY(-104px);
