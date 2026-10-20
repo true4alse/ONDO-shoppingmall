@@ -55,11 +55,9 @@
         const productInfo = newProductArray.find(function(item){
             return item.pid === Number(getParameter('pid'))
         })
-        
         const reviewInfo = reviewArray.filter(function(item){
             return item.pid === Number(getParameter('pid'))
         })
-
         console.log(reviewInfo)
     </script>
 
